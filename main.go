@@ -13,6 +13,11 @@ type ConfigsModel struct {
 	ExampleInput string
 }
 
+type configuration struct {
+	Enabled bool
+	Path    string
+}
+
 func createConfigsModelFromEnvs() ConfigsModel {
 	return ConfigsModel{
 		ExampleInput: os.Getenv("example_step_input"),
@@ -46,7 +51,8 @@ func main() {
 
 	fmt.Println()
 
-	//
 	// Main
 	log.Printf("Hello world!")
+	myMain()
+
 }
