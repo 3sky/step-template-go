@@ -1,0 +1,19 @@
+{
+    "android": {
+      "release": {
+        "keystore": "/Users/bitrise/keystores/bitrise.jks",
+        "storePassword": "bitrise",
+        "alias": "bitrise-alias",
+        "password": "bitrise",
+        "isPresent": false
+      }
+    },
+    "ios": {
+      "debug": {
+        "UID": 2367,
+        "codeSignIdentity": "iPhone Developer",
+        "developmentTeam": "72SA8V3WYL",
+        "packageType": "development"
+      }
+    }
+  }
