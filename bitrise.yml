@@ -31,7 +31,8 @@ workflows:
           file if you would not specify another value.
         run_if: true
         inputs:
-        - example_step_input: Example Step Input's value
+        - download_url: Example Step Input's value
+        - example_step_input
 
   go-tests:
     before_run:

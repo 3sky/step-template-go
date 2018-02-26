@@ -38,10 +38,10 @@ toolkit:
     package_name: github.com/bitrise-steplib/step-template-go
 run_if: ""
 inputs:
-  - example_step_input: Default Value - you can leave this empty if you want to
+  - example_step_input: URL for remote file
     opts:
-      title: "Example Step Input"
-      summary: Summary. No more than 2-3 sentences.
+      title: "Download URL"
+      summary: I will downlaod it.
       description: |
         Description of this input.
 
@@ -49,6 +49,7 @@ inputs:
       is_expand: true
       is_required: true
       value_options: []
+      
 outputs:
   - EXAMPLE_STEP_OUTPUT:
     opts:

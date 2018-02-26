@@ -67,11 +67,11 @@ func DownloadFile(filepath string, url string) error {
 	return nil
 }
 
-//UnmarshallJson ...
-func UnmarshallJson(json_path string) (data OperatingSystem) {
+//UnmarshallJSON ...
+func UnmarshallJSON(jsonPath string) (data OperatingSystem) {
 
 	//open file
-	buildFile, readErr := ioutil.ReadFile(json_path)
+	buildFile, readErr := ioutil.ReadFile(jsonPath)
 	if readErr != nil {
 		panic(readErr)
 	}

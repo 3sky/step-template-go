@@ -9,9 +9,9 @@ import (
 func TestDownloadFile(t *testing.T) {
 
 	testPath := "test.json"
-	testUrl := "https://raw.githubusercontent.com/3sky/step-template-go/master/misc/build.json"
+	testURL := "https://raw.githubusercontent.com/3sky/step-template-go/master/misc/build.json"
 
-	DownloadFile(testPath, testUrl)
+	DownloadFile(testPath, testURL)
 
 	testData, readErr := ioutil.ReadFile(testPath)
 	if readErr != nil {
@@ -28,7 +28,7 @@ func TestDownloadFile(t *testing.T) {
 
 func TestUnmarshallJson(t *testing.T) {
 
-	testData := UnmarshallJson("misc/build.json")
+	testData := UnmarshallJSON("misc/build.json")
 
 	if testData.Android.Release.Pasword != "bitrise" ||
 		testData.IOS.Debug.UID != 2367 ||
